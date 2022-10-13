@@ -6,7 +6,7 @@ from keras.layers import Dense, Dropout, Input, concatenate
 import numpy
 
 
-train = numpy.loadtxt("adress.csv", delimiter=",")
+train = numpy.loadtxt("train.csv", delimiter=",")
 s = train.shape[1] - 1
 print(s)
 cl = int(numpy.amax(train[:, s]) + 1)
