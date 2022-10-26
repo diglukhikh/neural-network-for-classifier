@@ -1,4 +1,6 @@
-
+#скачать обучающий и валидационный файлы по ссылкам
+#https://drive.google.com/file/d/10_ScZ-zbKTTDlOVSNCVKembLZX-CKnDp/view?usp=sharing
+#https://drive.google.com/file/d/1F4lqUJ5UKQKMJhUbx0ICKwrEljjt975_/view?usp=sharing
 
 from keras.models import Sequential,  Model
 from keras.layers import Dense, Dropout, Input, concatenate
@@ -6,7 +8,7 @@ from keras.layers import Dense, Dropout, Input, concatenate
 import numpy
 
 
-train = numpy.loadtxt("train.csv", delimiter=",")
+train = numpy.loadtxt("newtrain.csv", delimiter=",")
 s = train.shape[1] - 1
 print(s)
 cl = int(numpy.amax(train[:, s]) + 1)
